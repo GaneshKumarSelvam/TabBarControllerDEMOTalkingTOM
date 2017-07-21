@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BgH-in-tCc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Trailers-->
+        <scene sceneID="K7S-pc-yEY">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerTrailersId" id="NMd-ld-SWc" customClass="ViewControllerForTrailers" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9GY-Ls-j7O"/>
+                        <viewControllerLayoutGuide type="bottom" id="9dB-ci-Os2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ruD-Tc-Avj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYR-sS-rVv">
+                                <rect key="frame" x="0.0" y="20" width="320" height="110"/>
+                                <state key="normal" backgroundImage="Sardar Gabbar Singh.jpg"/>
+                                <connections>
+                                    <action selector="SGSTrailerClick:" destination="NMd-ld-SWc" eventType="touchUpInside" id="2mU-C6-exg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zig-GX-XVy">
+                                <rect key="frame" x="0.0" y="168" width="320" height="113"/>
+                                <state key="normal" backgroundImage="Jalsaposter.jpg"/>
+                                <connections>
+                                    <action selector="jalsaTrailerClick:" destination="NMd-ld-SWc" eventType="touchUpInside" id="SaZ-wN-WBB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-W8-4tY">
+                                <rect key="frame" x="0.0" y="318" width="320" height="119"/>
+                                <state key="normal" backgroundImage="Arya poster.jpg"/>
+                                <connections>
+                                    <action selector="arya2TrailerClick:" destination="NMd-ld-SWc" eventType="touchUpInside" id="1pt-cX-dh5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trailers" id="zQ5-Yp-uAX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkI-3W-VLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="228"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TiD-eu-Xiw">
+            <objects>
+                <tabBarController id="BgH-in-tCc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Nc5-xf-WPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1XD-th-Fio" kind="relationship" relationship="viewControllers" id="efu-hG-Jic"/>
+                        <segue destination="TMY-4r-JoC" kind="relationship" relationship="viewControllers" id="ZbI-kh-gLi"/>
+                        <segue destination="NMd-ld-SWc" kind="relationship" relationship="viewControllers" id="Lae-VW-pnO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYw-Tb-Bow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="-561"/>
+        </scene>
+        <!--Tom Images-->
+        <scene sceneID="JpA-aA-2zS">
+            <objects>
+                <viewController id="1XD-th-Fio" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gla-GZ-SAH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jig-mQ-3az"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZrR-HS-WxC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       Tom Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-0d-W6o">
+                                <rect key="frame" x="6" y="197" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       Tom Angry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFz-8G-9G5">
+                                <rect key="frame" x="182" y="197" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       Tom Eating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-uE-adp">
+                                <rect key="frame" x="0.0" y="439" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tom Happy Smile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhW-xh-GqE">
+                                <rect key="frame" x="182" y="439" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-hE-3ty">
+                                <rect key="frame" x="182" y="298" width="139" height="133"/>
+                                <state key="normal" title="Button" image="cat_happy_simple0016.png"/>
+                                <connections>
+                                    <action selector="tomHappySmileClick:" destination="1XD-th-Fio" eventType="touchUpInside" id="tbZ-GN-18K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mm-tA-RLy">
+                                <rect key="frame" x="183" y="61" width="138" height="128"/>
+                                <state key="normal" title="Button" image="cat_angry0000.png"/>
+                                <connections>
+                                    <action selector="tomAngryClick:" destination="1XD-th-Fio" eventType="touchUpInside" id="21M-06-3bq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaN-Mq-heQ">
+                                <rect key="frame" x="0.0" y="296" width="144" height="135"/>
+                                <state key="normal" title="Button" image="cat_eat0022.png"/>
+                                <connections>
+                                    <action selector="tomEatingClick:" destination="1XD-th-Fio" eventType="touchUpInside" id="7kr-DG-B96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ho-TN-g7x">
+                                <rect key="frame" x="0.0" y="60" width="156" height="129"/>
+                                <state key="normal" title="Button" image="cat_happy0015.png"/>
+                                <connections>
+                                    <action selector="tomHappyClick:" destination="1XD-th-Fio" eventType="touchUpInside" id="NhF-TV-y0d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tom Images" id="6gN-11-2Yp">
+                        <inset key="imageInsets" minX="0.0" minY="36" maxX="0.0" maxY="19"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRY-eF-ByM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-752"/>
+        </scene>
+        <!--View Controller For Tom-->
+        <scene sceneID="ccT-P1-mXg">
+            <objects>
+                <viewController storyboardIdentifier="animationId" id="hEA-T9-4bO" customClass="ViewControllerForTom" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y5S-mn-YM8"/>
+                        <viewControllerLayoutGuide type="bottom" id="6LQ-fK-V2E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tfq-4Q-bUe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="snH-6b-0S2">
+                                <rect key="frame" x="0.0" y="76" width="320" height="202"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnX-uX-rIc">
+                                <rect key="frame" x="6" y="38" width="66" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BgH-in-tCc" kind="modal" identifier="" id="1Zk-D5-Jin"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVF-sC-Ekw">
+                                <rect key="frame" x="44" y="352" width="84" height="30"/>
+                                <state key="normal" title="Speed :"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pgJ-XE-prl">
+                                <rect key="frame" x="125" y="347" width="118" height="31"/>
+                                <connections>
+                                    <action selector="sliderSpeedSlide:" destination="hEA-T9-4bO" eventType="valueChanged" id="iTT-nk-LdS"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-2a-A0t">
+                                <rect key="frame" x="256" y="341" width="52" height="36"/>
+                                <color key="backgroundColor" red="0.99630569520000001" green="1" blue="0.36146113759999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBn-GI-Sll">
+                                <rect key="frame" x="256" y="397" width="52" height="34"/>
+                                <color key="backgroundColor" red="0.99630569520000001" green="1" blue="0.36146113759999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-2i-ZwP">
+                                <rect key="frame" x="121" y="406" width="118" height="31"/>
+                                <connections>
+                                    <action selector="sliderRepeatCountSlide:" destination="hEA-T9-4bO" eventType="valueChanged" id="Pgd-E7-HEZ"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-0O-YAu">
+                                <rect key="frame" x="6" y="406" width="109" height="30"/>
+                                <state key="normal" title="Repeat Count :"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ow5-6k-w3b"/>
+                    <connections>
+                        <outlet property="sliderRepeatCountLabel" destination="wBn-GI-Sll" id="Jd1-kH-MZG"/>
+                        <outlet property="sliderSpeed" destination="pgJ-XE-prl" id="OlZ-mY-h0D"/>
+                        <outlet property="sliderSpeedForRepeatCount" destination="jEg-2i-ZwP" id="nTX-ee-pjB"/>
+                        <outlet property="sliderSpeedLabel" destination="TZ7-2a-A0t" id="1Rs-kj-cJa"/>
+                        <outlet property="tomImageView" destination="snH-6b-0S2" id="Dc3-Jf-qM9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jv8-ib-vub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-850"/>
+        </scene>
+        <!--Songs-->
+        <scene sceneID="tnQ-p8-3w6">
+            <objects>
+                <viewController id="TMY-4r-JoC" customClass="ViewControllerForSongs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1S-En-ISD"/>
+                        <viewControllerLayoutGuide type="bottom" id="rCu-e6-BAv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFw-Zc-P1e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-PQ-7ws">
+                                <rect key="frame" x="28" y="115" width="235" height="30"/>
+                                <color key="backgroundColor" red="0.84466561179999999" green="1" blue="0.8431903006" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="My Heart is Beating(Jalsa)"/>
+                                <connections>
+                                    <action selector="jalsaTrackClick:" destination="TMY-4r-JoC" eventType="touchUpInside" id="PYC-cl-wQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GV-S2-FPo">
+                                <rect key="frame" x="28" y="153" width="235" height="30"/>
+                                <color key="backgroundColor" red="0.84466561179999999" green="1" blue="0.8431903006" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Arya2 BGM"/>
+                                <connections>
+                                    <action selector="arya2TrackClick:" destination="TMY-4r-JoC" eventType="touchUpInside" id="hOs-ka-z2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UZ-Ur-Fza">
+                                <rect key="frame" x="28" y="77" width="235" height="30"/>
+                                <color key="backgroundColor" red="0.84466561179999999" green="1" blue="0.8431903006" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ni Chepa Kallu Track(SGS)"/>
+                                <connections>
+                                    <action selector="SGSTrackClick:" destination="TMY-4r-JoC" eventType="touchUpInside" id="V1J-NT-Fsn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTa-pc-NcE">
+                                <rect key="frame" x="101" y="28" width="118" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Songs" image="music-7.png" id="jlk-lM-lPK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlG-p6-15m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arya poster.jpg" width="600" height="777"/>
+        <image name="Jalsaposter.jpg" width="1040" height="489"/>
+        <image name="Sardar Gabbar Singh.jpg" width="600" height="300"/>
+        <image name="cat_angry0000.png" width="240" height="360"/>
+        <image name="cat_eat0022.png" width="240" height="360"/>
+        <image name="cat_happy0015.png" width="240" height="360"/>
+        <image name="cat_happy_simple0016.png" width="240" height="360"/>
+        <image name="music-7.png" width="30" height="30"/>
+    </resources>
+</document>
